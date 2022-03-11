@@ -1,5 +1,6 @@
 
-import './LandingPage.scss'
+import './LandingPage.scss';
+import {Link} from 'react-router-dom';
 
 
 export default function LandingPage() {
@@ -13,7 +14,7 @@ export default function LandingPage() {
             </div>
             <div class="landing-right">
               <h1 class="landing-right__1">WRKBLOCK</h1>
-              <h1 class="landing-right__2">ENTER</h1>
+              <Link to='/ProductivityPage'> <h1 class="landing-right__2">ENTER</h1> </Link>
             </div>
         </body>
     )
