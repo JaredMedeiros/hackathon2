@@ -42,7 +42,7 @@ import React from 'react'
           };
       
           return (
-            <div>
+            <div className = "clockdiv">
               <div className="clock-container styling">
                 <div id="clock" className="clock-content">
                   

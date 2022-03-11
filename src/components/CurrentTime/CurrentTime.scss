@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.clockdiv {
+    width: 20%;
+    margin-left: auto;
+}
+
 .clock-container {
   position: relative;
-  width: 20%;
+
   overflow: hidden;
   background: #fff;
   margin-left: auto;

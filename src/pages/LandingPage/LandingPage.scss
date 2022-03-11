@@ -1,8 +1,23 @@
 html,
 body {
-    background-color: black;
-    height: 100%;
+	background: linear-gradient(-45deg, #ee7752, #2ebfe3, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 
 .landing {
@@ -12,6 +27,7 @@ body {
     padding: 2rem;
     height: 100vh;
     align-items: center;
+    justify-content:space-between;
 }    
 
 h2 {
@@ -21,7 +37,7 @@ h2 {
   
 .landing-left {
     font-family: source code pro;
-    width: 45%;
+    width: 50%;
     color: white;
     font-size: 1rem;
     padding-right: 4rem;
@@ -45,12 +61,12 @@ h2 {
 
 .landing-right {
     font-family: Arial, Helvetica, sans-serif;
-    width: 30%;
+    width: 50%;
     
     font-size: 2rem;
 
     &__1 {
-   color: black;
+   color: transparent;
    transform: scale(1, 2.45);
   -webkit-transform: scale(1, 2.45);
   -moz-transform: scale(1, 2.45);
@@ -67,3 +83,29 @@ h2 {
     color: white;
   }
 }  
+
+
+h1 {
+  transition:transform 500ms ease;
+  
+  &:hover {
+    transform:scale(1.6);
+  }
+}
+
+
+.cursor {
+pointer-events: none;
+
+&__circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  
+  circle {
+    fill:white;
+  }
+}
+}

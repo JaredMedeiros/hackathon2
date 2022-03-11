@@ -4,8 +4,12 @@ import {Link} from 'react-router-dom';
 
 
 export default function LandingPage() {
+
+
+  
     return (
         <body class="landing">
+   
             <div class="landing-left">
               <h1 class="landing-left__line-1">WELCOME. TODAY IS</h1>
               <h1 class="landing-left__line-2">FRIDAY APRIL 11TH 2022</h1>
